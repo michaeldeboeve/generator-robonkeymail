@@ -1,0 +1,37 @@
+{
+  "name": "generator-robonkeymail",
+  "version": "0.0.1",
+  "description": "A Yeoman email project generator with gulp, browsersync, jade/pug or nunjucks, scss, stylus or less.",
+  "repository": "https://github.com/michaeldeboeve/generator-robonkey.git",
+  "keywords": [
+    "yeoman-generator",
+    "email",
+    "sass",
+    "stylus",
+    "less",
+    "jade",
+    "pug",
+    "nunjucks",
+    "gulp",
+    "superlatief",
+    "robonkey",
+    "robonkeymail"
+  ],
+  "author": {
+    "name": "Michaël de Boevé",
+    "email": "michaeldeboeve@gmail.com",
+    "url": "http://superlatief.be"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^1.0.0",
+    "fs-extra": "^0.30.0",
+    "jsonfile": "^2.2.3",
+    "yeoman-generator": "^0.19.2",
+    "yosay": "^1.0.3"
+  },
+  "main": "app/index.js",
+  "files": [
+    "generators"
+  ]
+}

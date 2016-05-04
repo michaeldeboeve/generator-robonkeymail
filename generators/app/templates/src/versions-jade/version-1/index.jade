@@ -1,0 +1,54 @@
+//- Base Template
+extends ../../views/layout/layout.jade
+
+
+
+
+//- Page Title Content
+block subject
+  | Email Subject Line
+
+
+
+
+//- View Online Content
+block viewOnline
+  | Als deze mail niet leesbaar is, #[a(target="_blank", href="#") klik hier].
+
+
+
+
+//- Header Content
+block header
+  a(href="#" target="_blank")
+    img.header-img.responsive(width="600", height="69", src="img/header.jpg", alt="", title="")
+
+
+
+
+//- Button Content
+block btnContent
+  a(href="#" target="_blank") Klik hier om dit document te openen.
+
+
+
+
+//- Main Content
+block mainContent
+  span.content
+    | Hallo,
+    br
+    br
+    | Laten we er het volgende van maken:
+    br
+    br
+    | Leuk dat je meer wil weten!
+    br
+    br
+  include ../../views/layout/base/button
+  span.content
+    br
+    | Succes ermee!
+    br
+    br
+    | Het team van AG Insurance wenst je een happy day!

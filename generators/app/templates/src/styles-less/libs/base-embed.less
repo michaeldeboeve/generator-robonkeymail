@@ -1,0 +1,46 @@
+// Reset
+// Originally based on The MailChimp Reset from Fabio Carneiro, MailChimp User Experience Design
+// More info and templates on Github: https://github.com/mailchimp/Email-Blueprints
+// http://www.mailchimp.com &amp; http://www.fabio-carneiro.com
+
+// Client-specific Styles
+#outlook{
+  a {
+    // Force Outlook to provide a "view in browser" menu link.
+    padding: 0;
+  }
+}
+body {
+  width:100% !important;
+  // Prevent Webkit and Windows Mobile platforms from changing default font sizes, while not breaking desktop design.
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.ExternalClass {
+  // Force Hotmail to display emails at full width
+  width:100%;
+
+  &, & p, & span, & font, & td, & div {
+    // Force Hotmail to display normal line spacing.  More on that: http://www.emailonacid.com/forum/viewthread/43/
+    line-height: 100%;
+  }
+}
+#backgroundTable {
+  margin: 0;
+  padding: 0;
+  width: 100% !important;
+  line-height: 100% !important;
+}
+
+table td { border-collapse: collapse; }
+
+a {
+  &:link { color: $link-color; }
+  &:visited { color: $visited-color; }
+  &:hover { color: $hover-color; }
+  &:active { color: $active-color; }
+}
+// End reset

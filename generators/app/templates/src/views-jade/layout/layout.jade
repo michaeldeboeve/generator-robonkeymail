@@ -1,0 +1,33 @@
+doctype strict
+html(xmlns="http://www.w3.org/1999/xhtml")
+  head
+    meta(http-equiv="Content-Type",content="text/html; charset=utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title
+      block subject
+    link(rel="stylesheet", type="text/css", href="../../tempcss/inline.css")
+    link(rel="stylesheet", type="text/css", href="../../tempcss/embed.css", embed)
+
+
+  body(yahoo="fix")
+
+    //- [ #center-table: Table to center the email ]
+    table#center-table(cellpadding="0",cellspacing="0", border="0" width="100%")
+      tr: td
+
+        //- [ #wrapper-table: Table to wrap the main content. Set width of email on this table ID ]
+        table#wrapper-table(cellpadding="0",cellspacing="0", border="0", align="center", width="600")
+          tr: td
+            //- [ #view-online-table: Table for the view online link ]
+            table#view-online-table(cellpadding="0",cellspacing="0", border="0", width="100%")
+              tr: td.spacer.height &nbsp;
+              tr: td.type
+                block viewOnline
+              tr: td.spacer.height &nbsp;
+            //-[ End: #view-online-table  ]
+
+            include base/header.jade
+
+            include base/body.jade
+
+            include base/footer.jade
