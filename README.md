@@ -2,4 +2,4 @@
 
 > A Yeoman email project generator with gulp, browsersync, jade/pug or nunjucks, scss, stylus or less.
 > 
-> More
+> Docs coming soon
